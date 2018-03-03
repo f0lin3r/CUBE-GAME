@@ -1,1 +1,2 @@
 # CUBE-GAME
+Simple interface
