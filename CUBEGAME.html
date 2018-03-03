@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--Подключаем Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+		<!--Подключаем JQuery -->
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<!--Мой JS код-->  
+		<script type="text/javascript" src="js/game.js"></script>
+		<!--Мой CSS-->
+		<link rel="stylesheet" href="css/MyCSS.css">
+		<title>CUBE</title>
+	</head>
+	<body>
+	<div class="container-fluid frame">
+	<!--Создаем "шапку" сайта--> 
+	<div class='row'>
+	<div class='col-lg-9' >
+      <h1>CUBE GAME</h1>
+      <div class='row'>
+	  <!--Кнопка старта-->
+        <div class='col-lg-3' >
+        <button type="button" class="btn btn-lg btn-block btn-success" id='new'>New Game</button>
+        </div>
+		<!--Кнопка рестарта-->
+        <div class='col-lg-3'>
+           <button type="button" class="btn btn-lg btn-block btn-info" id='restart'>Restart</button>
+        </div>
+		<!--Текущие очки пользователя-->
+        <div class='col-lg-3 point'>
+          <p>Points</p>
+          <p class='score'>0</p>
+        </div>
+		<!--Таймер обратного отсчета "время до конца игры"-->
+        <div class='col-lg-3 timer'>
+          <p>Time</p>
+		  <div id='timer'>
+		  <div id='second'>60</div>
+		  </div>
+		</div>
+      </div>
+  </div>
+  <!--Правила для пользователя :) -->
+   <div  class='col-lg-3'>
+     <div class='container-fluid tabl'> 
+    <h3>Rules</h3>
+     <p>The goal of the game is to score the most points in 1 minute. How?</p>
+<p id='click'>Click on the cubes!</p>
+<i>Don't touch big black cube</i>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!--Игровое поле с кубиками-->
+<div  class='container-fluid'>
+<div class='row'>
+  <div class='col-lg-9'>
+    <svg id='board'>
+       <rect id='cube-1' x='50' y='250' width='100' height='100' fill='lightgrey'/> <!--Обычный куб-->
+	   <rect id='cube-2' x='50' y='250' width='50' height='50' fill='lightgrey'/> <!--Малый куб-->
+	   <rect id='cube-3' x='50' y='250' width='150' height='150' fill='lightgrey'/> <!--Большой куб-->
+    </svg> 
+  </div>
+   <!--Таблица результатов-->
+  <div class='col-lg-3'>
+    <table class='table' id='table'>
+      <thead>
+      <tr>
+              <th scope="col">#</th>
+              <th scope="col">NickName</th>
+              <th scope="col">Score</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+</body>
+</html>

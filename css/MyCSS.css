@@ -1,0 +1,39 @@
+#board {
+  width:100%;
+  height:600px;
+  background-color:lightgrey;
+}
+.table {
+  background-color: grey;
+  border-radius:10px;
+}
+h3{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color:red;
+}
+#click {
+   color:red;
+}
+.frame {
+  border: 5px solid black;
+}
+.tabl {
+	border: 1px double black;
+	background-color:lightblue; 
+}
+.timer{
+font-size: 20px;
+text-align: center;
+cursor: default;
+font-family: fantasy;
+}
+.point {
+font-size: 20px;
+text-align: center;
+cursor: default;
+font-family: fantasy;
+}
+tbody {
+	background-color: lightblue;
+}
+ 
